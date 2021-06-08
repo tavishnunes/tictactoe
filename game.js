@@ -19,7 +19,7 @@ export default class Game {
 
        this.board[i] = this.turn;
 
-       if (this.findWinningCombination()) {
+       if (!this.findWinningCombination()) {
         this.nextTurn();
        }
     } 
